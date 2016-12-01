@@ -1,13 +1,191 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+<!--简介部分-->
+		<meta charset="utf-8" />
+		<title>韩都衣舍-韩都集团旗下品牌官网，涵盖品牌女装、男装、童装、妈妈装、鞋包等品类。正品保证，货到付款！</title>
+<!--外链接部分-->
+		<link rel="shortcut icon" href="img/iconmini.png" />
+		<link rel="stylesheet" type="text/css" href="css/index01.css" charset="utf-8"/>
+		
+		<!--外链接部分-->	
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/index01.js" ></script>
+		
+		<script>
+			$(function(){
+				$('#head00').load("head-fuyong.html",function(){
+					$.getScript('js/head.js');
+				})
+			})
+		</script>
+		
 	</head>
 	<body>
-		哈哈哈哈哈哈哈啊
-		哈哈哈哈哈
+<div class="zong">
+<!--------------------header start顶部开始-------------------->	
+	<div id="head00"></div>
+
+<!--------------------banner start导航轮播图开始-------------------->
+<div class="banner">
+	<div class="bannerBox">
+		<a href="" class="banner_imgs"><img src="img/01.jpg" alt="" /></a>
+		<a href="" class="banner_imgs"><img src="img/02.jpg" alt="" /></a>
+		<a href="" class="banner_imgs"><img src="img/03.jpg" alt="" /></a>
+	</div>
+	<ul class="banner_mini">
+		<li class="banner_mini_00">多元韩冬</li>
+		<li class="banner_mini_00">乐视页面</li>
+		<li class="banner_mini_00">99元封顶</li>
+	</ul>
+</div>
+
+
+<!--------------------banner over导航轮播图结束-------------------->
+
+<div style="width:100%;margin:0 auto;">
+	<a href="">
+		<div style="background: url(img/11.jpg) no-repeat center top;width:100%;height:120px;"></div>
+	</a>
+</div>
+
+<!--------------------main start页面主体开始-------------------->
+<div class="main">
+	<div class="">
+		<div class="mainBox"><img src="img/a11.png" alt="" /></div>
+		<div class="mainBox"><img src="img/a22.png" alt="" /></div>
+		<div class="mainBox"><img src="img/a33.png" alt="" /></div>
+		<div class="mainBox"><img src="img/a44.png" alt="" /></div>
+	</div>
+	<div class="mainer">
 		
-		我在修改我的网页中 第二次了
+	</div>
+</div>
+
+
+
+
+<!--------------------main over页面主体结束-------------------->
+<!--------------------main01 start页面主体开始-------------------->
+
+
+
+<!--------------------main01 over页面主体结束-------------------->
+
+
+
+<!--------------------container start猜你喜欢开始-------------------->
+<!--------------------container over猜你喜欢结束-------------------->
+<script>
+	$(function(){
+		$('#footer00').load("load-fuyong.html");
+	})
+</script>
+
+<!--------------------footer start页面尾部开始-------------------->
+<div id="footer00"></div>
+	
+	
+	<div class="footerDibu" style="width:1200px;">
+		<span style=" float:left; width:60px;position:absolute;">友情链接：</span>
+		<div  style="width: 1140px; position: relative; float: right; margin-top: 1px; overflow: hidden;">
+			<ul class="friendlink" id="gdtw">
+				<li><a href="">照片书</a></li>
+				<li><a href="">优品惠</a></li>
+				<li><a href="">广州分类信息</a></li>
+				<li><a href="">四季青服装网</a></li>
+				<li><a href="">优惠券</a></li>
+				<li><a href="">手表品牌大全</a></li>
+				<li><a href="">服装批发网</a></li>
+				<li><a href="">网上购物</a></li>
+				<li><a href="">淘牛品</a></li>
+				<li><a href="">虎扑识货</a></li>
+				<li><a href="">享优惠</a></li>
+				<li><a href="">嘉华旅游</a></li>
+				<li><a href="">女装批发网</a></li>
+
+				<li><a href="">照片书</a></li>
+				<li><a href="">优品惠</a></li>
+				<li><a href="">广州分类信息</a></li>
+				<li><a href="">四季青服装网</a></li>
+				<li><a href="">优惠券</a></li>
+				<li><a href="">手表品牌大全</a></li>
+				<li><a href="">服装批发网</a></li>
+				<li><a href="">网上购物</a></li>
+				<li><a href="">淘牛品</a></li>
+				<li><a href="">虎扑识货</a></li>
+				<li><a href="">享优惠</a></li>
+				<li><a href="">嘉华旅游</a></li>
+				<li><a href="">女装批发网</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--------------------footer over页面尾部结束-------------------->
+ <script type="text/javascript">
+  $.fn.imgscroll = function(o){
+    var defaults = {
+      speed: 40,
+      amount: 0,
+      width: 1,
+      dir: "left"
+    };
+    o = $.extend(defaults, o);
+    
+    return this.each(function(){
+      var _li = $("li", this);
+      _li.parent().parent().css({overflow: "hidden", position: "relative"}); //div
+      _li.parent().css({margin: "0", padding: "0", overflow: "hidden", position: "relative", "list-style": "none"}); //ul
+      _li.css({position: "relative", overflow: "hidden"}); //li
+      if(o.dir == "left") _li.css({float: "left"});
+      
+      //初始大小
+      var _li_size = 0;
+      for(var i=0; i<_li.size(); i++)
+        _li_size += o.dir == "left" ? _li.eq(i).outerWidth(true) : _li.eq(i).outerHeight(true);
+      
+      //循环所需要的元素
+      if(o.dir == "left") _li.parent().css({width: (_li_size*3)+"px"});
+      _li.parent().empty().append(_li.clone()).append(_li.clone()).append(_li.clone());
+      _li = $("li", this);
+  
+      //滚动
+      var _li_scroll = 0;
+      function goto(){
+        _li_scroll += o.width;
+        if(_li_scroll > _li_size)
+        {
+          _li_scroll = 0;
+          _li.parent().css(o.dir == "left" ? {left : -_li_scroll} : {top : -_li_scroll});
+          _li_scroll += o.width;
+        }
+          _li.parent().animate(o.dir == "left" ? {left : -_li_scroll} : {top : -_li_scroll}, o.amount);
+      }
+      
+      //开始
+      var move = setInterval(function(){goto();}, o.speed);
+      _li.parent().hover(function(){
+        clearInterval(move);
+      },function(){
+        clearInterval(move);
+        move = setInterval(function(){goto();}, o.speed);
+      });
+    });
+  };
+  
+  $(document).ready(function(){
+ //这里设置DIV层的样式名 
+    $("#gdtw").imgscroll({
+      speed: 40,    //滚动速度
+      amount: 0,    //滚动过渡时间
+      width: 1,     //滚动步数
+      dir: "left"   // "left" 或 "up" 向左或向上滚动
+    });
+    
+ });
+</script>
+<!--------------------------------------顶部悬浮开始-------------------------------------->
+</div>
+
 	</body>
 </html>
