@@ -2,9 +2,12 @@
 <html>
 	<head>
 <!--简介部分-->
-		<meta charset="utf-8" />
+		<meta charset="utf-8"  />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
 		<title>韩都衣舍-韩都集团旗下品牌官网，涵盖品牌女装、男装、童装、妈妈装、鞋包等品类。正品保证，货到付款！</title>
 <!--外链接部分-->
+
 		<link rel="shortcut icon" href="img/iconmini.png" />
 		<link rel="stylesheet" type="text/css" href="css/index01.css" charset="utf-8"/>
 		
@@ -22,6 +25,7 @@
 		
 	</head>
 	<body>
+		
 <div class="zong">
 <!--------------------header start顶部开始-------------------->	
 	<div id="head00"></div>
@@ -29,16 +33,45 @@
 <!--------------------banner start导航轮播图开始-------------------->
 <div class="banner">
 	<div class="bannerBox">
-		<a href="" class="banner_imgs"><img src="img/01.jpg" alt="" /></a>
-		<a href="" class="banner_imgs"><img src="img/02.jpg" alt="" /></a>
-		<a href="" class="banner_imgs"><img src="img/03.jpg" alt="" /></a>
+		<a href=""><img src="img/01.jpg" alt="" /></a>
+	</div>
+	<div class="bannerBox">
+		<a href=""><img src="img/02.jpg" alt="" /></a>
+	</div>
+	<div class="bannerBox">
+		<a href=""><img src="img/03.jpg" alt="" /></a>
+	</div>
+	<div class="bannerBox">
+		<a href=""><img src="img/04.jpg" alt="" /></a>
 	</div>
 	<ul class="banner_mini">
-		<li class="banner_mini_00">多元韩冬</li>
-		<li class="banner_mini_00">乐视页面</li>
-		<li class="banner_mini_00">99元封顶</li>
+		<li class="on">多元韩冬</li>
+		<li class="on">毛呢外套5折封顶</li>
+		<li class="on">乐视页面</li>
+		<li class="on">99元封顶</li>
 	</ul>
 </div>
+
+<script>
+
+$(function() {
+	
+	/*轮播*/
+	$.st('.banner .on', '.banner .bannerBox', {
+		'mode': 'fade',
+		'time': 3.5,
+		'Cmouseover': 'wait',
+	});
+	
+	/*新品上市 新轮播*/
+	/*$.st('.tab_brand li', '#new_arrial .floor_con', {
+		'mode': 'fade',
+		'time': 3,
+		'Cmouseover': 'wait',
+		'on': 'hover'
+	});*/
+});
+</script>
 
 
 <!--------------------banner over导航轮播图结束-------------------->
@@ -50,32 +83,131 @@
 </div>
 
 <!--------------------main start页面主体开始-------------------->
+<div class="n_main">
+	<div style="width:1200px;margin:0 auto;height:200px;position: relative;">
+		<a href="">
+			<div style="position: absolute;width:100%;height:100%;"></div>
+		</a>
+	</div>
+</div>
 <div class="main">
 	<div class="">
-		<div class="mainBox"><img src="img/a11.png" alt="" /></div>
-		<div class="mainBox"><img src="img/a22.png" alt="" /></div>
-		<div class="mainBox"><img src="img/a33.png" alt="" /></div>
-		<div class="mainBox"><img src="img/a44.png" alt="" /></div>
+		<div>
+			<div class="mainBox"><img src="img/a11.png" alt="" /></div>
+			<div class="mainBox"><img src="img/a22.png" alt="" /></div>
+		</div>
+		<div>
+			<div class="mainBox"><a href=""><img src="img/a33.png" alt="" /></a></div>
+			<div class="mainBox"><a href=""><img src="img/a44.png" alt="" /></a></div>
+		</div>
 	</div>
 	<div class="mainer">
 		
 	</div>
 </div>
 
-
-
-
 <!--------------------main over页面主体结束-------------------->
+
+
+<div class="wrap">
 <!--------------------main01 start页面主体开始-------------------->
 
-
+<div class="floor" id="new_arrial" style="margin-top:20px;">
+	<h1>
+		<ul class="tab_brand">
+			<li class=""><a href=""><span>韩风女装</span></a></li>
+			<li class=""><a href=""><span>甜美少女</span></a></li>
+			<li class=""><a href=""><span>迪葵纳</span></a></li>
+			<li class=""><a href=""><span>简约女装</span></a></li>
+			<li class=""><a href=""><span>韩风童装</span></a></li>
+		</ul>
+	</h1>
+	
+	
+	<ul class="floor_con" style="z-index: 4; display: block;">
+		<li class="new_boxs">
+			<a href="">
+				<img src="img/1476043815683026172.jpg" >
+			</a>
+			<ul>
+				<li class="price">
+					<span class="new_price"><span class="arrow">￥</span>298.00</span>
+					<del class="old_price">￥648.00</del>
+				</li>
+				<li><span class="pic_button">立即抢购</span> </li>
+			</ul>
+		</li>
+		<li class="new_boxs">
+			<a href="" >
+				<img src="http://s.handu.com/images/201608/thumb_img/1471032619463909194.jpg" >
+			</a>
+			<ul>
+				<li class="price">
+					<span class="new_price"><span class="arrow">￥</span>388.00</span>
+					<del class="old_price">￥778.00</del>
+				</li>
+				<li><span class="pic_button">立即抢购</span> </li>
+			</ul>
+		</li>
+		<li class="new_boxs">
+			<a href="">
+				<img src="http://s.handu.com/images/201608/thumb_img/1470773472760072266.jpg" >
+			</a>
+			<ul>
+				<li class="price">
+					<span class="new_price"><span class="arrow">￥</span>388.00</span>
+					<del class="old_price">￥768.00</del>
+				</li>
+				<li><span class="pic_button">立即抢购</span> </li>
+			</ul>
+		</li>
+		<li class="new_boxs">
+			<a href="" >
+				<img src="http://s.handu.com/images/201608/thumb_img/1470773449690172322.jpg" >
+			</a>
+			<ul>
+				<li class="price">
+					<span class="new_price"><span class="arrow">￥</span>359.00</span>
+					<del class="old_price">￥738.00</del>
+				</li>
+				<li><span class="pic_button">立即抢购</span> </li>
+			</ul>
+		</li>
+		<li class="new_boxs">
+			<a href="l" >
+				<img src="http://s.handu.com/images/201608/thumb_img/1470773405967984749.jpg" >
+			</a>
+			<ul>
+				<li class="price">
+					<span class="new_price"><span class="arrow">￥</span>389.00</span>
+					<del class="old_price">￥768.00</del>
+				</li>
+				<li><span class="pic_button">立即抢购</span> </li>
+			</ul>
+		</li>	
+	</ul>
+	
+	
+	
+</div>
 
 <!--------------------main01 over页面主体结束-------------------->
-
+</div>
 
 
 <!--------------------container start猜你喜欢开始-------------------->
+
+
+
+
+
+
+
 <!--------------------container over猜你喜欢结束-------------------->
+
+
+
+
 <script>
 	$(function(){
 		$('#footer00').load("load-fuyong.html");
@@ -85,6 +217,7 @@
 <!--------------------footer start页面尾部开始-------------------->
 <div id="footer00"></div>
 	
+<!-------------------------------------->
 	
 	<div class="footerDibu" style="width:1200px;">
 		<span style=" float:left; width:60px;position:absolute;">友情链接：</span>
@@ -184,8 +317,36 @@
     
  });
 </script>
-<!--------------------------------------顶部悬浮开始-------------------------------------->
+
 </div>
+<!--------------------------------------侧面悬浮开始-------------------------------------->
+<div class="float_box">
+	<div class="float_app"></div>
+	<a href="" class="a1" onclick="_czc.push(['_trackEvent', '悬浮', '购物车']);"></a>
+	<a href="" class="a2" onclick="_czc.push(['_trackEvent', '悬浮', '在线客服']);"></a>
+	<a href="" class="a3" onclick="_czc.push(['_trackEvent', '悬浮', '在线反馈']);"></a>
+	<a href="" class="a4" target="_blank"></a>
+	<a href="" class="a5 backTop" onclick="_czc.push(['_trackEvent', '悬浮', '返回顶部']);"></a>
+</div>
+<!--------------------------------------顶部悬浮开始-------------------------------------->
+<div id="xf_search">
+	<div class="xf_search_co">
+		<div class="xf_logo"><img src="img/slogo.png" width="77" height="40" /></div>
+		<div id="xf_search_s">
+			<div class="i-searcha ld">
+				<div class="form input_noticea" >
+					<form method="get" action="search.php">
+						<input type="text" class="text" name="keywords" value="毛呢外套" onFocus="if (value =='毛呢外套'){value =''}$('') " onblur="if (value ==''){value='毛呢外套'}" />
+						<input type="submit" value="搜索" onClick="_czc.push(['_trackEvent', '搜索', '悬浮搜索', $('input[name=keywords]').val()])" class="button" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="xf_font">没空去韩国？就来韩都衣舍！</div>
+	</div>
+</div>
+
+
 
 	</body>
 </html>
