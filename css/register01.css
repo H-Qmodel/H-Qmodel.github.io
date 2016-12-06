@@ -1,0 +1,230 @@
+.register{
+	width:1100px;
+	margin:0 auto;
+}
+.register_right{
+	width:360px;
+	margin:40px 0 0 30px;
+}
+.register_right_list{
+	line-height:40px;
+	font-size: 13px;
+}
+.register_loginbtn{
+	background:url(../img/NEWS_login.png) no-repeat -347px -211px;
+	border:none;
+	width:103px;
+	height:29px;
+	color:white;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 16px;
+	margin:8px 0 0 10px;
+	cursor: pointer;
+}
+.news_loginRight_pic{
+	margin-left:-7px;
+}
+.crm_module {
+	width: 430px;
+	height: 97px;
+	float: left;
+	margin-top: 8px;
+	margin-left:-7px;
+	position: relative
+}
+
+.dy {
+	position: absolute;
+	bottom: 35px;
+	left: 5px
+}
+
+.dy input {
+	width: 250px;
+	height: 25px;
+	border: 1px solid #ddd;
+	float: left;
+	font: 14px/20px '宋体';
+	color: #666
+}
+
+#form_dy button {
+	display: inline-block;
+	width: 70px;
+	height: 22px;
+	background: url(../img/footer00.png) no-repeat;
+	float: left;
+	margin: 2px 8px;
+	border: none;
+	cursor: pointer;
+}
+/*************居中右边***********/
+.register_left{
+	height:500px;
+	border-left: #DDD 1px dashed;
+	margin: 30px 0 0 48px;
+	padding-left: 48px;
+}
+.fl{
+	float:left;
+	display: inline;
+}
+.register_matel{
+	width:609px;
+	border-bottom: #ddd 1px dashed;
+	height: 120px;
+	line-height: 50px;
+}
+.register_num{
+	background: url(../img/NEWS_login.png) no-repeat 0 -326px;
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	float: left;
+	text-align: center;
+	line-height: 24px;
+	margin: 13px 0 0 0;
+}
+.register_numName{
+	margin-left: 8px;
+	line-height: 50px;
+}
+.register_fs{
+	width: 316px;
+	margin: 8px 0 0 0;
+}
+.register_fs a{
+	background:url(../img/NEWS_login.png) no-repeat 0 -102px;
+	width: 135px;
+	height: 38px;
+	border: none;
+	display: block;
+	line-height: 38px;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.register_emailbtn{
+	background-position: 0 -102px;
+	color: #fff;
+}
+.register_fs a.register_telphonebtn{
+	background-position: 0 -151px;
+	color: #393939;
+}
+.register_tip{
+	float: left;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #fffac3;
+}
+.phone-up{
+	margin-top:-8px;
+	margin-left:60px;
+}
+.register_tip .triangle-up-back{
+	border-bottom-color: #c7c08d;
+}
+.triangle-up-back,.triangle-up{
+	width: 0px;
+	height: 0px;
+	color: white;
+	text-align: center;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fffac3;
+}
+.register_mail{
+	margin:20px 0 0 0;
+}
+/*隐藏部分*/
+.tcewm{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 90px;
+}
+.div_guanbi{
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.register_list{
+	margin:0;
+	padding:0;
+	width:580px;
+}
+.register_list li{
+	width: 580px;
+	line-height: 33px;
+	float: left;
+}
+.register_list .register_list_name{
+	width: 115px;
+	text-align: right;
+	float: left;
+	color: #393939;
+}
+.register_mail ul.register_list li input.register_list_txt {
+    background: url(../img/shopping_login.png) no-repeat -0 -182px;
+    width: 210px;
+    height: 33px;
+    border: none;
+    float: left;
+    text-indent: 5px;
+    line-height: 33px;
+}
+.register_mail ul.register_list li input.register_telphonetime {
+    background: url(../img/NEWS_login.png) no-repeat -257px -107px;
+    width: 116px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin: 3px 0 0 5px;
+    color: #7b7b7b;
+    border: none;
+}
+.register_mail ul.register_list li .register_telphonetime {
+    background: url(../imgNEWS_login.png) no-repeat -256px -107px;
+    width: 116px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin: 3px 0 0 5px;
+    color: #7b7b7b;
+    float: left;
+}
+.register_list li.register_list_neirong{
+	float: left;
+	color: #7b7b7b;
+	text-indent: 115px;
+	width: 600px;
+}
+.register_mail ul.register_list li .register_list_xieyi {
+    float: left;
+    color: #393939;
+    text-indent: 115px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.register_mail ul.register_list li input.register_list_regree {
+    background: url(../img/NEWS_login.png) no-repeat 0 -51px;
+    width: 171px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 0 120px;
+    cursor: pointer;
+}
+
+
+
+
+
+

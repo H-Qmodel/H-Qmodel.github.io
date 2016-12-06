@@ -1,9 +1,154 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+<!--简介部分-->
+		<meta charset="utf-8"  />
+	
+		
+		
+		<title>用户中心_韩都衣舍HSTYLE网-韩风快时尚第一品牌购物商城。正品保证！</title>
+<!--外链接部分-->
+
+		<link rel="shortcut icon" href="img/iconmini.png" />
+		<link rel="stylesheet" type="text/css" href="css/index01.css" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/land01.css" charset="utf-8"/>
+		
+		
+		<!--外链接部分-->	
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/index01.js" ></script>
+		
+		<script>
+			$(function(){
+				$('#head00').load("head-fuyong.html",function(){
+					$.getScript('js/head.js');
+				})
+			})
+		</script>
+		
+		
 	</head>
 	<body>
+		<script>
+			$(function(){
+				$('#contentId').css("display","none");
+			})
+		</script>
+		
+		<div id="head00">
+			
+			
+		</div>
+		
+<!--------------------header start顶部开始-------------------->	
+
+
+<!--------------------register start购物车中间内容开始-------------------->	
+<div style="margin:0 auto;width:1100px;float:none;margin-top:10px;">
+	<img src="img/banner1.jpg" alt="" />
+</div>
+<!--------------------------->
+<div class="news_login">
+	<div class="news_loginRight">
+		<div class="news_loginRight_pic" style="padding-top:25px;">
+			<img src="img/410-290.png" width="410" height="290">
+		</div>
+	</div>
+	<div class="news_login_left">
+		<div class="login_form" style="margin-top:25px;">
+			<h1 class="news_login_title">用户登录</h1>
+			<form name="formLogin" action="user.php" method="post">
+				<div class="news_loginLeft">
+					<ul class="news_loginLeft_list">
+						<li>
+							<div class="new_loginName">用户名：</div>
+							<input name="username" size="25" maxlength="50" class="new_loginTxt" value="邮箱地址/手机号" onfocus="if (value =='邮箱地址/手机号'){value =''}$('') " onblur="if (value ==''){value='邮箱地址/手机号'}" type="text">
+						</li>
+						<li>
+							<div class="new_loginName">密码：</div>
+							<input name="password" size="15" maxlength="30" class="new_loginTxt" type="password">
+						</li>
+
+						<li id="captcha_li">
+							<div class="new_loginName">验证码：</div>
+							<input id="captcha" name="captcha" style="width:120px;" type="text">&nbsp;
+							<!--验证码-->
+							<a href="javascript:void(0);" onclick="reset_captcha();">
+								<img src="" id="captcha_img"
+									style="width:86px;height:31px;float:right;border:0;" align="absmiddle">
+							</a>
+						</li>
+
+						<li style="text-align:center;margin-left:75px;margin-top:0px;">
+							<span id="message" class="login_error"></span>
+							<span>
+							<input name="back_act" value="user.php" type="hidden">
+                            
+							<input name="submit" class="login_btn" onclick="login();_czc.push(['_trackEvent', '登陆', '立即登录']);" value="立即登录" style="float:left; cursor:pointer;" type="button">
+							<div style="height:35px;line-height:50px;">
+							  <input class="news_loginRadio" value="1" name="remember" id="remember" type="checkbox">保存登录信息
+							</div>
+							</span>
+						</li>
+						<li style="margin-left:80px;height:30px;line-height:30px;">
+							<a href="user.php?act=register" onclick="_czc.push(['_trackEvent','登陆','注册']);" style="float:left;">注册</a>
+							<span>&nbsp;|&nbsp;</span>
+							<a href="user.php?act=qpassword_name" onclick="_czc.push(['_trackEvent','登陆','忘记密码']);">忘记密码?</a>
+						</li>
+						<li style="margin-left:80px;height:20px;"></li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		
+		<!--其他登录方式-->
+		<div class="login_other" style="margin-bottom:15px;">
+			<div class="login_other_title">其他登录方式：</div>
+			<div class="login_other_btn">
+				<a href="javascript:void(0);" onclick="toQQLogin();_czc.push(['_trackEvent', '登陆', 'QQ']);"><span class="login_other_btn00"></span></a>
+				<a href="javascript:void(0);" onclick="toSinaLogin();_czc.push(['_trackEvent', '登陆', 'Sina']);"><span class="login_other_btn00 login_other_btn11"></span></a>
+				<a href="javascript:void(0);" onclick="toXunleiLogin();_czc.push(['_trackEvent', '登陆', 'Thunder']);"><span class="login_other_btn00 login_other_btn22"></span></a>
+				<a href="javascript:void(0);" onclick="toAlypayLogin();_czc.push(['_trackEvent', '登陆', 'Alipay']);"><span class="login_other_btn00 login_other_btn33"></span></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+<!--------------------register over购物车中间内容结束-------------------->	
+
+
+<script>
+	$(function(){
+		$('#footer00').load("load-fuyong.html");
+	})
+</script>
+
+<!--------------------footer start页面尾部开始-------------------->
+<div id="footer00"></div>	
+	
+	
+<!--------------------------------------侧面悬浮开始-------------------------------------->
+<div class="float_box">
+	<div class="float_app"></div>
+	<a href="" class="a1" onclick="_czc.push(['_trackEvent', '悬浮', '购物车']);"></a>
+	<a href="" class="a2" onclick="_czc.push(['_trackEvent', '悬浮', '在线客服']);"></a>
+	<a href="" class="a3" onclick="_czc.push(['_trackEvent', '悬浮', '在线反馈']);"></a>
+	<a href="" class="a4" target="_blank"></a>
+	<a href="" class="a5 backTop" onclick="_czc.push(['_trackEvent', '悬浮', '返回顶部']);"></a>
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	</body>
 </html>

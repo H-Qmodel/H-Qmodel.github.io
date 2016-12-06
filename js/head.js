@@ -1,3 +1,15 @@
+/*复用部分的区分 隐藏 显示*/
+$(function() {
+	$(".contentLeft").hide();
+	$(".headerUL_li").hover(function() {
+		$(".content").show();
+
+	}, function() {
+		$(".content").hide();
+	})
+})
+
+
 $(function(){
 	$('.wangzhangdh1').mouseover(function(){
 		$('.webdhbox').show();
@@ -56,3 +68,5 @@ $(function(){
 			$(".contentLi").removeClass("menulihover");
 		})
 	})
+
+
