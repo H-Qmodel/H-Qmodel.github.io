@@ -106,14 +106,16 @@
 	font-size: 14px;
 	margin-left: 10px;
 }
-.register_emailbtn{
-	background-position: 0 -102px;
-	color: #fff;
-}
-.register_fs a.register_telphonebtn{
+#regTitle .register_telphonebtn{
 	background-position: 0 -151px;
 	color: #393939;
 }
+
+#regTitle .register_emailbtn{
+	background-position: 0 -102px;
+	color: #fff;
+}
+
 .register_tip{
 	float: left;
 	border: 1px solid #ddd;
@@ -121,9 +123,19 @@
 	margin-top: 10px;
 	background-color: #fffac3;
 }
+.register_tip>span:nth-of-type(1){
+	display: block;
+}
+.register_tip>span:nth-of-type(2){
+	display: none;
+}
 .phone-up{
 	margin-top:-8px;
 	margin-left:60px;
+}
+.email-up{
+	margin-top:-8px;
+	margin-left:210px;
 }
 .register_tip .triangle-up-back{
 	border-bottom-color: #c7c08d;
@@ -158,9 +170,15 @@
 	padding:0;
 	width:580px;
 }
+#regDiv>form:nth-of-type(1){
+	display: block;
+}
+#regDiv>form:nth-of-type(2){
+	display: none;
+}
 .register_list li{
 	width: 580px;
-	line-height: 33px;
+	line-height: 32px;
 	float: left;
 }
 .register_list .register_list_name{
@@ -172,14 +190,14 @@
 .register_mail ul.register_list li input.register_list_txt {
     background: url(../img/shopping_login.png) no-repeat -0 -182px;
     width: 210px;
-    height: 33px;
+    height: 32px;
     border: none;
     float: left;
     text-indent: 5px;
-    line-height: 33px;
+    line-height: 32px;
 }
 .register_mail ul.register_list li input.register_telphonetime {
-    background: url(../img/NEWS_login.png) no-repeat -257px -107px;
+    background: url(../img/NEWS_login.png) no-repeat -256px -107px;
     width: 116px;
     height: 26px;
     line-height: 26px;
@@ -198,10 +216,10 @@
     color: #7b7b7b;
     float: left;
 }
-.register_list li.register_list_neirong{
+.register_list li .register_list_neirong{
 	float: left;
 	color: #7b7b7b;
-	text-indent: 115px;
+	text-indent: 114px;
 	width: 600px;
 }
 .register_mail ul.register_list li .register_list_xieyi {
@@ -222,9 +240,27 @@
     margin: 10px 0 0 120px;
     cursor: pointer;
 }
+#regDiv input{
+	outline:none;
+}
+#captcha_li,#captcha_li2{
+	height:25px;
+	line-height:25px;
+}
 
-
-
-
-
+#captcha_li>a,#captcha_li2>a{
+	width:86px;
+	height:31px;
+	display: inline-block;
+	position:relative;
+	font-weight: bolder;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:4px;
+	text-align: center;
+	background:url(../img/emailbj.jpg) no-repeat;
+}
+/*#captcha_li2{
+	display: none;
+}*/
 

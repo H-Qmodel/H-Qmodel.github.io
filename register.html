@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<!--简介部分-->
+<!--简介部分  注册页面-->
 		<meta charset="utf-8"  />
 	
 		
@@ -18,6 +18,12 @@
 		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
 		<script type="text/javascript" src="js/index01.js" ></script>
 		<script type="text/javascript" src="js/register01.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/register03.js" ></script>
+		<script type="text/javascript" src="js/register02.js" ></script>
+
+		
+		
 		
 		<script>
 			$(function(){
@@ -46,7 +52,7 @@
 
 <!--------------------register start购物车中间内容开始-------------------->	
 <div style="margin:0 auto;width:1100px;float:none;margin-top:10px;">
-	<img src="img/banner1.jpg" alt="" />
+	<img src="img/banner1.jpg" alt="" width="1100" height="60" />
 </div>
 <!--------------------------->
 
@@ -79,17 +85,17 @@
 			<div class="register_num">1</div>
 			<div class="register_numName fl">选择注册方式：</div>
 			<div id="regTitle" class="register_fs fl">
-				<a style="cursor:pointer;" class="register_emailbtn" onclick="">使用手机注册</a>
+				<a style="cursor:pointer;" class="register_telphonebtn  register_emailbtn" onclick="">使用手机注册</a>
 				<a style="cursor:pointer;" class="register_telphonebtn" onclick="">使用邮箱注册</a>
 			</div>
 
 			<div class="register_tip">
-				<span style="display: block;">
+				<span style="">
 						<div class="triangle-up-back phone-up"></div>
 						<div class="triangle-up phone-up"></div>
 						&nbsp;使用手机号注册再享手机专属券！
 					</span>
-				<span style="display: none;">
+				<span style="">
 						<div class="triangle-up-back email-up"></div>
 						<div class="triangle-up email-up"></div>
 						&nbsp;推荐使用手机注册，保障账号安全，享安全无忧购物！
@@ -100,77 +106,77 @@
 
 		<div class="register_mail" style="position:relative;">
 
-			<!--<div id="captcha_li" class="tcewm">
-				<div id="sms_captcha_msg" style="color:#ffffff; margin:0px 0px 10px 0px;">请填写图片上的字母或数字：</div>
-				<div class="div_guanbi" style="float:right; margin-top:-42px;" onclick="validCodeTcClose();"><img src="img/18.png"></div>
-				<input id="sms_captcha" name="sms_captcha" style="width:115px;float:left;" type="text">&nbsp;
-				<a href="javascript:void(0);" onclick="document.getElementById('sms_captcha_img').src='captcha.php?is_login=1&amp;'+Math.random()" style="float:left;"><img src="captcha.php?is_login=1&amp;1652091065" id="sms_captcha_img" style="float:none" width="86" height="31" align="absmiddle"></a>
-				<div class="div_btn1" onclick="validCodeTcClose();sendValidCode();"><img src="http://img01.handu.com//hdysweb/20151103/11.png"></div>
-			</div>-->
+<!------------------------------------------------------>
+	
+<!--------------------------------------------------------->
 
 			<div class="register_num">2</div>
 			<div class="register_numName fl">填写您的信息：</div>
 			<div id="regDiv">
 
-				<form action="user.php" method="post" name="formMobile" onsubmit="return mobileRegister(this);">
-					<ul class="register_list" style="display: block;">
+				<form action="" method="get" name="formMobile" onsubmit="return mobileRegister(this);">
+					<ul class="register_list" style="">
 						<li>
 							<div class="register_list_name">您的手机号：</div>
-							<input name="mobile" size="25" maxlength="11" id="mobile" onblur="checkMobile(this.value);" autocomplete="off" class="register_list_txt" type="text">
-							<input value="发送验证码" class="register_telphonetime" id="send_valid_code" onclick="sendValidCode();" type="button">
+							<input name="mobile" size="25" maxlength="11" id="mobile" onblur="" autocomplete="off" class="register_list_txt" type="text">
+							<!--<input value="获取验证码" class="register_telphonetime" id="send_valid_code" onclick="sendValidCode();" type="button" style="cursor: pointer;">-->
 							
 							
-							<div id="mobile_msg" class="register_telphonetime" style="display:none;">
+							<!--<div id="mobile_msg" class="register_telphonetime" style="display:none;">
 								<span id="mobile_second" style="font-size:12px; color:#bf0000; width:10px; margin-left:5px;"></span>
 								秒后可重新发送
-							</div>
-							<div id="tip_m_m" class="register_list_tishi"></div>
+							</div>-->
+							<div id="tip_m_m" class="register_list_tishi" style="color:#bf0000;"></div>
 						</li>
 						<li>
 							<div class="register_list_neirong">请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码?<a href="" style="color: #bf0000">其他验证方式</a>
 							</div>
 						</li>
 
-						<li style="margin-top:10px;margin-bottom:10px;">
+						<li  id="captcha_li2" style="margin-top:10px;margin-bottom:10px;">
 							<div class="register_list_name">验证码：</div>
 							<input size="8" id="valid_code" name="valid_code" class="register_list_txt" autocomplete="off" type="text">
+							<!---->
+							<a href="javascript:void(0);" onclick=""><img src="img/emailbj.jpg" id="captcha_img2" style="float:none;display: inline-block;" width="86" height="31"  align="absmiddle"></a>
+							
 						</li>
+						
+						<!---------------------------------->
+						
 						<li>
 							<div class="register_list_name">密码：</div>
 							<input name="password" id="Mpassword" onblur="check_password(this.value,'tip_m_p');" autocomplete="off" class="register_list_txt" type="password">
-							<div id="tip_m_p" class="register_list_tishi"></div>
+							<div id="tip_m_p" class="register_list_tishi" style="color: #bf0000"></div>
 						</li>
 						<li>
-							<div class="register_list_neirong">6-16位字符，可使用字母、数字或符号的组合</div>
+							<div class="register_list_neirong">8-24位字符，可使用字母、数字或符号的组合</div>
 						</li>
 						<li>
 							<div class="register_list_name">确认密码：</div>
 							<input name="confirm_password" id="MCpassword" onblur="check_conform_password(this.value,document.getElementById('Mpassword').value, 'tip_m_cp');" class="register_list_txt" type="password">
-							<div id="tip_m_cp" class="register_list_tishi"></div>
+							<div id="tip_m_cp" class="register_list_tishi" style="color: #bf0000"></div>
 						</li>
 
 						<li>
 							<div class="register_list_xieyi">
 								<input name="agreement" value="1" checked="checked" type="checkbox"> 我已看过并接受
-								<a href="http://www.handu.com/helper-21-734.html" target="_blank" style="color: #bf0000;font-weight: bold;">《用户协议》</a>
+								<a href="" target="_blank" style="color: #bf0000;font-weight: bold;">《用户协议》</a>
 							</div>
 						</li>
 						<li>
-							<input name="back_act" value="http://www.handu.com/" type="hidden">
-							<input name="parent_id" value="0" type="hidden">
-							<input name="act" value="mobile_act_register" type="hidden">
 							<input id="reg_mobile_submit" class="register_list_regree" value="同意协议并注册" type="submit">
 						</li>
 					</ul>
 
 				</form>
 
-				<!--<form action="user.php" method="post" name="formUser" onsubmit="return emailRegister(this);">
-					<ul class="register_list" style="display: none;">
+<!------------------------------------------->
+				<form action="user.php" method="post" name="formUser" onsubmit="return emailRegister(this);">
+					<ul class="register_list" style="">
 						<li>
 							<div class="register_list_name">Email：</div>
-							<input name="email" size="25" id="email" onblur="checkEmail(this.value);" class="register_list_txt" type="text">
-							<div id="tip_e_e" class="register_list_tishi"></div>
+							<input name="email" size="25" id="email" onblur="" class="register_list_txt" type="text">
+							<div id="tip_e_e" class="register_list_tishi" style="color: #bf0000"></div>
 						</li>
 						<li>
 							<div class="register_list_neirong">Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</div>
@@ -178,7 +184,7 @@
 						<li>
 							<div class="register_list_name">密码：</div>
 							<input name="password" autocomplete="off" id="password1" onblur="check_password(this.value,'tip_e_p');" class="register_list_txt" type="password">
-							<div id="tip_e_p" class="register_list_tishi"></div>
+							<div id="tip_e_p" class="register_list_tishi" style="color: #bf0000"></div>
 						</li>
 						<li>
 							<div class="register_list_neirong">8-24位字符，必须包含字母、数字的组合</div>
@@ -186,7 +192,7 @@
 						<li>
 							<div class="register_list_name">确认密码：</div>
 							<input name="confirm_password" id="conform_password" autocomplete="off" onblur="check_conform_password(this.value,document.getElementById('password1').value, 'tip_e_cp');" class="register_list_txt" type="password">
-							<div id="tip_e_cp" class="register_list_tishi"></div>
+							<div id="tip_e_cp" class="register_list_tishi" style="color: #bf0000"></div>
 						</li>
 						<li>
 							<div class="register_list_neirong">请再次输入密码，两次输入必须一致</div>
@@ -195,24 +201,24 @@
 						<li id="captcha_li">
 							<div class="register_list_name">验证码：</div>
 							<input id="captcha" name="captcha" style="width:115px;" type="text">&nbsp;
-							<a href="javascript:void(0);" onclick=""><img src="" id="captcha_img" style="float:none" width="86" height="31" align="absmiddle"></a>
+							<a href="javascript:void(0);" onclick=""><img src="img/emailbj.jpg" id="captcha_img" style="float:none;display: inline-block;" width="86" height="31"  align="absmiddle"></a>
+							
+							<!--<div id="tip_e_yzm" class="register_list_tishi" style="color: #bf0000"></div>-->
 						</li>
 
 						<li>
 
 							<div class="register_list_xieyi">
 								<input name="agreement" value="1" checked="checked" type="checkbox"> 我已看过并接受
-								<a href="http://www.handu.com/helper-21-734.html" target="_blank" style="color: #bf0000">《用户协议》</a>
+								<a href="" target="_blank" style="color: #bf0000">《用户协议》</a>
 							</div>
 						</li>
 						<li>
-							<input name="back_act" value="http://www.handu.com/" type="hidden">
-							<input name="parent_id" value="0" type="hidden">
-							<input name="act" value="act_register" type="hidden">
-							<input id="reg_email_submit" class="register_list_regree" value="同意协议并注册" onclick="_czc.push(['_trackEvent', '注册', 'Agree']);" type="submit">
+							<input id="reg_email_submit" class="register_list_regree" value="同意协议并注册" onclick="" type="submit">
 						</li>
 					</ul>
-				</form>-->
+				</form>
+<!------------------------------------------------------------------>
 
 			</div>
 		</div>
@@ -224,8 +230,7 @@
 
 <!--------------------register over购物车中间内容结束-------------------->	
 
-
-<script>
+<script type="text/javascript" >
 	$(function(){
 		$('#footer00').load("load-fuyong.html");
 	})
@@ -247,11 +252,6 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
+
 	</body>
 </html>

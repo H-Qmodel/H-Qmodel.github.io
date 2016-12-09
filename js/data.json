@@ -1,0 +1,38 @@
+{
+	"10001": {
+		"goods-id": 10001,
+		"goods-name": "韩都衣舍2016冬季新款韩版宽松毛呢外套女OU6246堯",
+		"goods-price": 129.00,
+		"goods-sale": 49.98,
+		"size": {
+			"1000101": "S",
+			"1000102": "M",
+			"1000103": "L",
+			"1000104": "XL"
+		},
+		"color": {
+			
+			"id": "10001001",
+			"small-pic": "img/color.png",
+			"large-pic": "img/color-large.png",
+			"color-type": "粉蓝色"
+		},
+		"stock": 9861
+	},
+	"10002": {
+		"goods-id": 10001,
+		"goods-name": "韩都衣舍2016冬季新款韩版宽松毛呢外套女OU6246堯",
+		"goods-price": 129.00,
+		"goods-sale": 45.00,
+		"size": {
+			"1000101": "S",
+			"1000102": "M",
+			"1000103": "L",
+			"1000104": "XL"
+		},
+		"color": {
+			"id": "10001001",
+			"url": "img/color.png"
+		}
+	}
+}

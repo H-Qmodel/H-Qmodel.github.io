@@ -152,18 +152,14 @@ tt {
 	position: absolute;
 }
 
-.hot,
-.Hstyle,
-.AMH,
-.mini,
-.help {
+.webdh>.hot1,.webdh>.Hstyle,.webdh>.AMH,.webdh>.mini,.webdh>.help {
 	border-right: 1px solid #E5E5E5;
 	height: 137px;
 	float: left;
 	margin-left: 26px;
 }
 
-.hot {
+.hot1 {
 	width: 186px;
 }
 
@@ -179,7 +175,7 @@ tt {
 	width: 227px;
 }
 
-.hot h1,
+.hot1 h1,
 .Hstyle h1,
 .AMH h1,
 .mini h1,
@@ -190,7 +186,7 @@ tt {
 	;
 }
 
-.hot h1 {
+.hot1 h1 {
 	color: #F56B03;
 }
 
@@ -210,7 +206,7 @@ tt {
 	color: #686868;
 }
 
-.hot h1 span,
+.hot1 h1 span,
 .Hstyle h1 span,
 .AMH h1 span,
 .mini h1 span,
@@ -218,7 +214,7 @@ tt {
 	font-weight: bold;
 }
 
-.hot ul li {
+.webdhbox>.webdh>.hot1 ul li {
 	float: left;
 	height: 23px;
 	width: 90px;
@@ -248,15 +244,10 @@ tt {
 	width: 90px;
 }
 
-.Hstyle ul {
+.Hstyle ul,.hot1 ul {
 	width: 280px;
 }
 
-.hot ul li {
-	float: left;
-	height: 23px;
-	width: 90px;
-}
 
 
 /************************ header02 start ***************************/
@@ -341,10 +332,13 @@ tt {
 	height: 100px;
 }
 
-.header04_b {
-	font-weight: bolder;
+#header04_b {
+	width:100%;
+	font-size: 12px;
+	font-weight: bold;
 	color: #FF0053;
-	padding-left: 5px;
+	text-align: center;
+	line-height: 16px;
 }
 
 .headerUL {
@@ -479,7 +473,7 @@ tt {
 
 .contentLi {
 	border-bottom: 1px dotted #ccc;
-	padding: 12px 13px;
+	padding: 11px 13px;
 	position: relative;
 	border-top: none;
 }
@@ -653,6 +647,7 @@ tt {
 }
 .mainBox1 .t1a{
 	margin-top:10px;
+	cursor:pointer;
 }
 .mainBox1 a{
 	font-weight: bold;
@@ -665,6 +660,7 @@ tt {
 	width:15px;
 	height:15px;
 	margin:10px 5px 6px 0;
+	cursor:pointer;
 }
 .firstP ul{
 	float:left;
@@ -928,7 +924,10 @@ tt {
 	width: 100%;
 	overflow: hidden;
 }
-
+.flower_item{
+	float:left;
+	display: none;
+}
 .one {
 	width: 230px;
 	overflow: hidden;
@@ -1060,6 +1059,7 @@ tt {
 }
 
 #new_arrial {
+	width:100%;
 	position: relative;
 	min-height: 340px;
 	margin-bottom: -15px;
@@ -1097,18 +1097,27 @@ tt {
 	background: url(../img/2.png) no-repeat 0 0;
 	text-decoration: none;
 }
+.tab_brand li.hover>a {
+	color: #fff;
+	background: url(../img/2.png) no-repeat 0 0;
+	text-decoration: none;
+}
 
-.floor_con {
+.floor_con_aa{
+	width: 1220px;
+	height: auto;
+	overflow: hidden;
+}
+.floor_con{
 	width: 1220px;
 	height: auto;
 	overflow: hidden;
 }
 
-#new_arrial>ul.floor_con {
+#new_arrial>ul.floor_con_aa {
 	position: absolute;
-	top: 20px;
+	top: 24px;
 	left: 0;
-	display: none;
 }
 
 .new_boxs {
@@ -1927,6 +1936,8 @@ tt {
 	letter-spacing: 4px;
 	cursor: pointer;
 }
-
+.on{
+	display: block;
+}
 
 /***************************************************************/

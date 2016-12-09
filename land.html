@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<!--简介部分-->
+<!--简介部分  登录页面-->
 		<meta charset="utf-8"  />
 	
 		
@@ -17,6 +17,9 @@
 		<!--外链接部分-->	
 		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
 		<script type="text/javascript" src="js/index01.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/land01.js" ></script>
+		
 		
 		<script>
 			$(function(){
@@ -45,7 +48,7 @@
 
 <!--------------------register start购物车中间内容开始-------------------->	
 <div style="margin:0 auto;width:1100px;float:none;margin-top:10px;">
-	<img src="img/banner1.jpg" alt="" />
+	<img src="img/banner1.jpg" alt="" width="1100" height="60" />
 </div>
 <!--------------------------->
 <div class="news_login">
@@ -62,19 +65,19 @@
 					<ul class="news_loginLeft_list">
 						<li>
 							<div class="new_loginName">用户名：</div>
-							<input name="username" size="25" maxlength="50" class="new_loginTxt" value="邮箱地址/手机号" onfocus="if (value =='邮箱地址/手机号'){value =''}$('') " onblur="if (value ==''){value='邮箱地址/手机号'}" type="text">
+							<input id="loginname01" name="username" size="25" maxlength="50" class="new_loginTxt" value="邮箱地址/手机号" onfocus="if (value =='邮箱地址/手机号'){value =''}$('') " onblur="if (value ==''){value='邮箱地址/手机号'}" type="text">
 						</li>
 						<li>
 							<div class="new_loginName">密码：</div>
-							<input name="password" size="15" maxlength="30" class="new_loginTxt" type="password">
+							<input id="loginname02" name="password" size="15" maxlength="30" class="new_loginTxt" type="password">
 						</li>
 
 						<li id="captcha_li">
 							<div class="new_loginName">验证码：</div>
 							<input id="captcha" name="captcha" style="width:120px;" type="text">&nbsp;
 							<!--验证码-->
-							<a href="javascript:void(0);" onclick="reset_captcha();">
-								<img src="" id="captcha_img"
+							<a href="javascript:void(0);" onclick="">
+								<img src="img/emailbj.jpg" id="captcha_img"
 									style="width:86px;height:31px;float:right;border:0;" align="absmiddle">
 							</a>
 						</li>
@@ -82,9 +85,8 @@
 						<li style="text-align:center;margin-left:75px;margin-top:0px;">
 							<span id="message" class="login_error"></span>
 							<span>
-							<input name="back_act" value="user.php" type="hidden">
                             
-							<input name="submit" class="login_btn" onclick="login();_czc.push(['_trackEvent', '登陆', '立即登录']);" value="立即登录" style="float:left; cursor:pointer;" type="button">
+							<input name="submit" class="login_btn" onclick="" value="立即登录" style="float:left; cursor:pointer;" type="button">
 							<div style="height:35px;line-height:50px;">
 							  <input class="news_loginRadio" value="1" name="remember" id="remember" type="checkbox">保存登录信息
 							</div>

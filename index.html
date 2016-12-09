@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<!--简介部分-->
+<!--简介部分 首页-->
 		<meta charset="utf-8"  />
 	
 		
 		
 		<title>韩都衣舍-韩都集团旗下品牌官网，涵盖品牌女装、男装、童装、妈妈装、鞋包等品类。正品保证，货到付款！</title>
 <!--外链接部分-->
-
 		<link rel="shortcut icon" href="img/iconmini.png" />
 		<link rel="stylesheet" type="text/css" href="css/index01.css" charset="utf-8"/>
 		
@@ -22,6 +21,11 @@
 					$.getScript('js/head.js',function(){
 						$('.content').show();
 						$(".headerUL_li").off("mouseenter mouseleave");
+						$(".headerUL_li").mouseleave(function(){
+							$(".contentLeft").fadeOut();
+							$(".contentLeft_itemt").fadeOut();
+							$(".contentLi").removeClass("menulihover");
+						})
 					});
 				})
 			})
@@ -50,9 +54,9 @@
 	</div>
 	<ul class="banner_mini">
 		<li class="on">多元韩冬</li>
-		<li class="on">毛呢外套5折封顶</li>
-		<li class="on">乐视页面</li>
-		<li class="on">99元封顶</li>
+		<li class="">毛呢外套5折封顶</li>
+		<li class="">乐视页面</li>
+		<li class="">99元封顶</li>
 	</ul>
 </div>
 
@@ -61,19 +65,19 @@
 $(function() {
 	
 	/*轮播*/
-	$.st('.banner .on', '.banner .bannerBox', {
+	$.st('.banner_mini>li', '.banner .bannerBox', {
 		'mode': 'fade',
 		'time': 3.5,
 		'Cmouseover': 'wait',
 	});
 	
 	/*新品上市 新轮播*/
-	/*$.st('.tab_brand li', '#new_arrial .floor_con', {
+	$.st('.tab_brand>li', '.floor_con_aa', {
 		'mode': 'fade',
 		'time': 3,
 		'Cmouseover': 'wait',
 		'on': 'hover'
-	});*/
+	});
 });
 </script>
 
@@ -100,7 +104,7 @@ $(function() {
 	<div class="main_div" style="margin-top:0;">
 		<div class="mainBox1">
 			<h1 class="t1"></h1>
-			<a class="t1a" href="">换一批</a>
+			<a class="t1a">换一批</a>
 			<div class="mainBox1_img"><img src="img/bt.png" alt="" /></div>
 			<div style="width:678px;height:293px;overflow: hidden;position: relative;">
 				<div class="firstP" style="display: none;">
@@ -155,10 +159,10 @@ $(function() {
 				<div class="tabs" style="top:0;left:369px;">无穷花开</div>
 			</div>
 			<div class="flower_list">
-				<div class="flower_item" style="display: none;">
+				<div class="flower_item" style="">
 					<div class="one">
 						<a href="" target="_blank">
-							<h2 style="background:url(http://img01.handu.com/hdysweb/20160728/230_1.jpg) no-repeat;"><span>韩都衣舍上市获批！成互联网服饰品牌第一股！……</span></h2></a>
+							<h2 style="background:url(img/230_1.jpg) no-repeat;"><span>韩都衣舍上市获批！成互联网服饰品牌第一股！……</span></h2></a>
 						<ul>
 							<li>
 								<a href="" target="_blank">韩都衣舍签约亚洲女神朴信惠</a>
@@ -173,7 +177,7 @@ $(function() {
 					</div>
 					<div class="one">
 						<a href="" target="_blank">
-							<h2 style="background:url(http://img01.handu.com/hdysweb/20160711/12.jpg) no-repeat;"><span>韩风十年 星光十年</span></h2></a>
+							<h2 style="background:url(img/12.jpg) no-repeat;"><span>韩风十年 星光十年</span></h2></a>
 						<ul>
 							<li>
 								<a href="" target="_blank">韩都衣舍旗下男装AMH摘得双11淘品牌冠军</a>
@@ -187,9 +191,9 @@ $(function() {
 						</ul>
 					</div>
 				</div>
-				<div class="flower_item" style="display: block;">
+				<div class="flower_item ffll_item" style="">
 					<div class="two">
-						<h2><a href="" target="_blank"><img src="http://img01.handu.com/hdysweb/20161021/qy2.jpg" width="481" height="174"></a></h2>
+						<h2><a href="" target="_blank"><img src="img/qy2.jpg" width="481" height="174"></a></h2>
 						<ul>
 							<li><span><a href="" target="_blank">[详细内容]</a></span>
 								<a href="" target="_blank">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a>
@@ -203,10 +207,10 @@ $(function() {
 						</ul>
 					</div>
 				</div>
-				<div class="flower_item" style="display: none;">
+				<div class="flower_item" style="">
 					<div class="one">
 						<a href="" target="_blank">
-							<h2 style="background:url(http://img01.handu.com/hdysweb/20160817/xp.jpg) no-repeat;"><span>韩都衣舍：一个线上品牌的衍变</span></h2></a>
+							<h2 style="background:url(img/xp.jpg) no-repeat;"><span>韩都衣舍：一个线上品牌的衍变</span></h2></a>
 						<ul>
 							<li>
 								<a href="" target="_blank">韩都衣舍：阿米巴炸裂</a>
@@ -222,7 +226,7 @@ $(function() {
 					</div>
 					<div class="one">
 						<a href="" target="_blank">
-							<h2 style="background:url(http://img01.handu.com/hdysweb/20150713/051.jpg) no-repeat;"><span>韩都衣舍赵迎光："站在时尚门外的时尚品牌掌门人"</span></h2></a>
+							<h2 style="background:url(img/051.jpg) no-repeat;"><span>韩都衣舍赵迎光："站在时尚门外的时尚品牌掌门人"</span></h2></a>
 						<ul>
 							<li>
 								<a href="" target="_blank">赵迎光：把决策力从老板放到员工身上</a>
@@ -236,7 +240,7 @@ $(function() {
 						</ul>
 					</div>
 				</div>
-				<div class="flower_item" style="display: none;">
+				<div class="flower_item" style="">
 					<div class="two">
 						<h2><a href="" target="_blank"><img src="http://img01.handu.com/hdysweb/20160728/1.jpg" width="481" height="174"></a></h2>
 						<ul>
@@ -260,10 +264,14 @@ $(function() {
 	
 	<div class="main_div">
 		<div class="mainBox3"><a href=""><img src="img/a33.png" alt="" /></a></div>
-		<div class="mainBox4"><a href=""><img src="img/a44.png" alt="" /></a></div>
+		
+		<div class="mainBox4">
+			<embed wmode="opaque" type="application/x-shockwave-flash" src="http://vodcdn.video.taobao.com/player/ugc/tb_ugc_pieces_core_player_loader.swf?version=1.0.20150330&amp;vid=36759941&amp;uid=1585817269&amp;p=2&amp;t=1&amp;rid=&amp;random=6666" allowfullscreen="true" flashvars="scene=taobao_shop" allowscriptaccess="never" width="498" height="316">
+		</div>
 	</div>
 	
 </div>
+
 
 <!--------------------main over页面主体结束-------------------->
 
@@ -273,16 +281,17 @@ $(function() {
 
 	<div class="floor" id="new_arrial" style="margin-top:20px;">
 		<h1>
-		<ul class="tab_brand">
-			<li class=""><a href=""><span>韩风女装</span></a> | </li>
-			<li class=""><a href=""><span>甜美少女</span></a> | </li>
-			<li class=""><a href=""><span>迪葵纳</span></a> | </li>
-			<li class=""><a href=""><span>简约女装</span></a> | </li>
-			<li class=""><a href=""><span>韩风童装</span></a> | </li>
-		</ul>
-	</h1>
-
-		<ul class="floor_con" style="z-index: 4; display: block;">
+			<ul class="tab_brand">
+				<li class="hover"><a href=""><span>韩风女装</span></a> | </li>
+				<li class=""><a href=""><span>甜美少女</span></a> | </li>
+				<li class=""><a href=""><span>迪葵纳</span></a> | </li>
+				<li class=""><a href=""><span>简约女装</span></a> | </li>
+				<li class=""><a href=""><span>韩风童装</span></a> | </li>
+			</ul>
+		</h1>
+	
+<!----------------------------------------------------->
+		<ul class="floor_con_aa" style="">
 			<li class="new_boxs">
 				<a href="">
 					<img src="img/1476043815683026172.jpg">
@@ -297,7 +306,7 @@ $(function() {
 			</li>
 			<li class="new_boxs">
 				<a href="">
-					<img src="http://s.handu.com/images/201608/thumb_img/1471032619463909194.jpg">
+					<img src="img/1471032619463909194.jpg">
 				</a>
 				<ul>
 					<li class="price">
@@ -309,7 +318,7 @@ $(function() {
 			</li>
 			<li class="new_boxs">
 				<a href="">
-					<img src="http://s.handu.com/images/201608/thumb_img/1470773472760072266.jpg">
+					<img src="img/1470773472760072266.jpg">
 				</a>
 				<ul>
 					<li class="price">
@@ -321,7 +330,7 @@ $(function() {
 			</li>
 			<li class="new_boxs">
 				<a href="">
-					<img src="http://s.handu.com/images/201608/thumb_img/1470773449690172322.jpg">
+					<img src="img/1470773449690172322.jpg">
 				</a>
 				<ul>
 					<li class="price">
@@ -333,7 +342,7 @@ $(function() {
 			</li>
 			<li class="new_boxs">
 				<a href="l">
-					<img src="http://s.handu.com/images/201608/thumb_img/1470773405967984749.jpg">
+					<img src="img/1470773405967984749.jpg">
 				</a>
 				<ul>
 					<li class="price">
@@ -344,7 +353,261 @@ $(function() {
 				</ul>
 			</li>
 		</ul>
-
+<!----------------------------------------------------->
+		<ul class="floor_con_aa" style="">
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1053119_thumb_G_1480576047685.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>298.00</span>
+						<del class="old_price">￥648.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span></li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480555714455887270.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥778.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480490605632642717.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480435372187169866.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>359.00</span>
+						<del class="old_price">￥738.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="l">
+					<img src="img/1480410132357870070.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>389.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+		</ul>
+<!----------------------------------------------------->
+		<ul class="floor_con_aa" style="">
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1476043815683026172.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>298.00</span>
+						<del class="old_price">￥648.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span></li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1471032619463909194.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥778.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1470773472760072266.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1470773449690172322.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>359.00</span>
+						<del class="old_price">￥738.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="l">
+					<img src="img/1470773405967984749.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>389.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+		</ul>		
+<!----------------------------------------------------->
+		<ul class="floor_con_aa" style="">
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1053119_thumb_G_1480576047685.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>298.00</span>
+						<del class="old_price">￥648.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span></li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480555714455887270.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥778.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480490605632642717.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1480435372187169866.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>359.00</span>
+						<del class="old_price">￥738.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="l">
+					<img src="img/1480410132357870070.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>389.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+		</ul>		
+<!----------------------------------------------------->
+		<ul class="floor_con_aa" style="">
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1476043815683026172.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>298.00</span>
+						<del class="old_price">￥648.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span></li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1471032619463909194.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥778.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1470773472760072266.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>388.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="">
+					<img src="img/1470773449690172322.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>359.00</span>
+						<del class="old_price">￥738.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+			<li class="new_boxs">
+				<a href="l">
+					<img src="img/1470773405967984749.jpg">
+				</a>
+				<ul>
+					<li class="price">
+						<span class="new_price"><span class="arrow">￥</span>389.00</span>
+						<del class="old_price">￥768.00</del>
+					</li>
+					<li><span class="pic_button">立即抢购</span> </li>
+				</ul>
+			</li>
+		</ul>		
+		
+		
+		
 	</div>
 	
 	
@@ -604,7 +867,7 @@ $(function() {
 		</div>
 		<ul class="floor_ul">
 			<li class="hstyle_boxs">
-				<a href="">
+				<a href="details.html">
 					<img src="img/1477565789851415034.jpg" alt="" />
 				</a>
 				<ul>
@@ -614,7 +877,7 @@ $(function() {
 			</li>
 			
 			<li class="hstyle_boxs">
-				<a href="">
+				<a href="details.html">
 					<img src="img/1477565789851415034.jpg" alt="" />
 				</a>
 				<ul>
@@ -840,7 +1103,7 @@ $(function() {
 			<div class="nav_bar">
 				<div class="s_img">
 					<a href="">
-						<img class="lazy" src="img/1479201998458670029.jpg" alt="" style="display: block;" />
+						<img class="lazy" src="img/1469763145598257010.jpg" alt="" style="display: block;" />
 						<div class="info">
 							秋装新品
 							<span> > </span>
@@ -954,7 +1217,7 @@ $(function() {
 			<div class="nav_bar">
 				<div class="s_img">
 					<a href="">
-						<img class="lazy" src="img/1479201998458670029.jpg" alt="" style="display: block;" />
+						<img class="lazy" src="img/1469763145598257010.jpg" alt="" style="display: block;" />
 						<div class="info">
 							秋装新品
 							<span> > </span>
@@ -1068,7 +1331,7 @@ $(function() {
 			<div class="nav_bar">
 				<div class="s_img">
 					<a href="">
-						<img class="lazy" src="img/1479201998458670029.jpg" alt="" style="display: block;" />
+						<img class="lazy" src="img/1469763145598257010.jpg" alt="" style="display: block;" />
 						<div class="info">
 							秋装新品
 							<span> > </span>
@@ -1182,7 +1445,7 @@ $(function() {
 			<div class="nav_bar">
 				<div class="s_img">
 					<a href="">
-						<img class="lazy" src="img/1479201998458670029.jpg" alt="" style="display: block;" />
+						<img class="lazy" src="img/1469763145598257010.jpg" alt="" style="display: block;" />
 						<div class="info">
 							秋装新品
 							<span> > </span>

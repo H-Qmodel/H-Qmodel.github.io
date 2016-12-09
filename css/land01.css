@@ -116,6 +116,23 @@ input[type="text"], input[type="password"], textarea {
 }
 
 
+#captcha_li{
+	height:25px;
+	line-height:25px;
+}
+#captcha_li>a{
+	width:82px;
+	height:31px;
+	display: inline-block;
+	position:relative;
+	font-weight: bolder;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:4px;
+	text-align: center;
+	background:url(../img/emailbj.jpg) no-repeat;
+}
+
 
 
 

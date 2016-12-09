@@ -10,6 +10,7 @@ $(function() {
 })
 
 
+
 $(function(){
 	$('.wangzhangdh1').mouseover(function(){
 		$('.webdhbox').show();
@@ -39,8 +40,11 @@ $(function(){
 
 /*导航左侧栏js效果 start*/
 $(function(){
+	/*导航左侧下拉菜单content 下的ul li(.contentLi)*/
 		$(".contentLi").hover(function(){
+			//对应的隐藏详情菜单
 			$(".contentLeft_itemt").hide();
+			//左方小图片的切换 位移
 			$(this).find(".content_i").children("img").eq(0).css("display","none");
 			$(this).find(".content_i").children("img").eq(1).css("display","block");
 			$(this).find(".content_i").stop(true).animate({
@@ -55,6 +59,7 @@ $(function(){
 			$($(".contentLeft_itemt")[index]).addClass("yMenuLConinhover").siblings().removeClass("yMenuLConinhover");
 			$(this).siblings().children("contentLeft_itemt").hide();
 		},function(){
+			//左方小图片的切换 位移
 			$(this).find(".content_i").children("img").eq(0).css("display","block");
 			$(this).find(".content_i").children("img").eq(1).css("display","none");
 			$(this).find(".content_i").stop(true).animate({

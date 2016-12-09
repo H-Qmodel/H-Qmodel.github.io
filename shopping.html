@@ -1,9 +1,453 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+<!--简介部分   购物车页面-->
+		<meta charset="utf-8"  />
+	
+		
+		
+		<title>购物车中心-韩都衣舍官方网站</title>
+<!--外链接部分-->
+
+		<link rel="shortcut icon" href="img/iconmini.png" />
+		<link rel="stylesheet" type="text/css" href="css/shopping.css" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/index01.css" charset="utf-8"/>
+		<link rel="stylesheet" href="css/cart.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		
+
+		
+		
+		<!--外链接部分-->	
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/index01.js" ></script>
+		<script type="text/javascript" src="js/head.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/cart.js" ></script>
+		
+		
+		
+		
+		
+		
 	</head>
 	<body>
+		<script>
+			$(function(){
+				$('#contentId').css("display","none");
+			})
+		</script>
+		<script>
+			$(function(){
+				$('#cartGoodsList').load("shopping01.html");
+			})
+		</script>
+		
+<!--------------------header start顶部开始-------------------->	
+<div class="header01">
+	<div class="header01_1">
+		<div class="header01_one">
+			<ul>
+				<li>
+					<a href="index.html" style="" id="header_a">返回首页</a>
+				</li>
+				<li>
+					<a href="">收藏网站</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header01_two">
+			<ul>
+				<li>您好，欢迎光临韩都衣舍！</li>
+				<li>
+					<a href="">登录</a>
+				</li>
+				<li>
+					<a href="register.html" style="color:#C70A28;">注册</a>
+				</li>
+				<li>
+					<a href="">购物车</a><tt> | </tt></li>
+				<li>
+					<a href="">在线客服</a>
+				</li>
+				<li>
+					<a href="">帮助中心</a>
+				</li>
+				<li id="wangzhangdh" class="wangzhangdh1">
+					<a href="" class="header_a"><s></s>网站导航</a>
+					<div class="webdhbox" style="display: none;">
+						<div class="webdh">
+							<div class="hot1">
+								<h1>大家都在买<span>Hot</span></h1>
+								<ul>
+									<li>
+										<a href="" target="_blank">t恤</a>
+									</li>
+									<li>
+										<a href="" target="_blank">连衣裙</a>
+									</li>
+									<li>
+										<a href="" target="_blank">牛仔裤</a>
+									</li>
+									<li>
+										<a href="" target="_blank">毛衣针织</a>
+									</li>
+									<li>
+										<a href="" target="_blank">卫衣绒衫</a>
+									</li>
+									<li>
+										<a href="" target="_blank">休闲套装</a>
+									</li>
+								</ul>
+							</div>
+							<div class="Hstyle">
+								<h1>女装<span>Women</span></h1>
+								<ul>
+									<li>
+										<a href="" target="_blank">韩风快时尚女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">韩风快时尚妈妈装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">韩风甜美少女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">东方复古设计师女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">韩风名媛时尚女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">欧美浪漫田园风女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">韩风大码女装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">欧美快时尚女装</a>
+									</li>
+								</ul>
+							</div>
+							<div class="AMH">
+								<h1>男装<span>Men</span></h1>
+								<ul>
+									<li>
+										<a href="" target="_blank">韩风快时尚男装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">东方禅意设计师男装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">欧美街头轻潮男装</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mini">
+								<h1>童装<span>Children</span></h1>
+								<ul>
+									<li>
+										<a href="" target="_blank">韩风快时尚童装</a>
+									</li>
+									<li>
+										<a href="" target="_blank">东方简约设计师童装</a>
+				wangzhangdh					</li>
+								</ul>
+							</div>
+							<div class="help" style="border-right: none;">
+								<h1>帮助中心<span>Help</span></h1>
+								<ul>
+									<li>
+										<a href="" target="_blank">会员制度</a>
+									</li>
+									<li>
+										<a href="" target="_blank">售后服务</a>
+									</li>
+									<li>
+										<a href="" target="_blank">购物流程</a>
+									</li>
+									<li>
+										<a href="" target="_blank">关于发票</a>
+									</li>
+									<li>
+										<a href="" target="_blank">配送方式</a>
+									</li>
+									<li>
+										<a href="" target="_blank">韩都招聘</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<!--------------------register start购物车中间内容开始-------------------->	
+
+<div class="cart_header">
+	<a href="" class="cart_logo fl"></a>
+	<div class="cart_step step1 fr"></div>
+</div>
+
+<div class="wrap">
+
+	<div class="warm_tip"><em>温馨提示：</em>现在&nbsp;
+		<a onclick="_is_login(login_suc);" style="color:#fe0032;cursor:pointer;">登录</a>&nbsp;,把心仪的商品保存在”购物车“</div>
+
+	<div class="shopping_nr">
+		<div class="shopping_nr_title">
+			<div class="shop_qx" style="width: 117px;"> </div>
+			<div class="shop_qx" style="width: 500px;">商品名称</div>
+			<div class="shop_qx" style="width: 117px;">售价</div>
+			<div class="shop_qx" style="width: 143px;">数量</div>
+			<div class="shop_qx" style="width: 157px;">小计</div>
+			<div class="shop_qx" style="width: 162px;">操作</div>
+		</div>
+		<!--------------------购物车动态部分----------------------->
+		<!--<div class="shopping_car_bottom" style="display: none;">
+			<div class="shopping_car_arrow">
+				<div class="car_arrow"></div>
+				<ul class="car_arrow_txt">
+					<li class="car_arrow_warn">您的购物车内没有商品，请挑选心仪的商品吧！</li>
+					<li>
+						<a href="details.html" target="_blank" class="go_shopping">去挑选喜欢的商品</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+		<!--------------------------------------------------------->
+		
+<h3> 品牌：清仓特惠商品</h3>
+<div class="pink_tips fl">
+	<em class="manjian"></em>
+	<span title="毛呢专属特惠满1099减400"> 已参与毛呢专属特惠满1099减400活动,减去400.00 元现金  </span>
+	<span class="cashback">   满立减：￥400.00   </span> <span class="favorPrice"> </span>
+</div>
+<!--商品区-->
+	<div id="cartGoodsList" class="shopping_nr_top">
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+		<!--------------------------------------------------------->
+	<div class="shopping_car_bottom">
+
+		<div class="shopping_car_bottom_right">
+			<div class="accumulated fr">
+				<table>
+					<tbody>
+						<tr>
+							<td><span id="goods_allnum" class="p_color">0</span>件商品</td>
+							<td class="td_len1">总计：</td>
+							<td id="total_Price" class="td_len">￥0.00</td>
+						</tr>
+						<tr>
+
+							<td colspan="2">满立减：</td>
+							<td id="total_fanxian">- ￥0.00</td>
+
+						</tr>
+						<tr>
+
+							<td colspan="2">税费：</td>
+							<td id="total_fanxian">- ￥0.00 </td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="shopping_car_bottom shopping_car_bottom_bg">
+		
+		<div class="shopping_car_bottom_right">
+
+			<span class="shopping_car_bottom_rightMoney">
+                    <span style="line-height:50px;">
+                    
+                        购物金额总计：
+                        <span style="min-width:75px;display:inline-block;text-align:right;">
+                          <span style="color:#bf0000; font-size:18px;">￥</span>
+			<span id="totalAmount">0</span>
+			</span>
+			</span>
+			</span>
+
+		</div>
+	</div>
+
+
+<a href="http://www.handu.com">
+	<div class="cart_btn btn9 fl" style="margin-right:10px;margin-top:12px;" onclick="_czc.push(['_trackEvent', '购物车', '继续购物']);"></div>
+</a>
+<a href="flow.php?step=checkout" id="btn_goto_checkout">
+	<div class="cart_btn btn1 fr" style="margin-top:12px;position:relative;" onclick="_czc.push(['_trackEvent', '购物车', '去结算']);">
+		<div class="turnOrder">
+			正在转向订单信息,请稍候！
+		</div>
+	</div>
+</a>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-------------购物车动态部分2------------------->
+		
+	
+
+	<div class="div_deleted">
+		<h1 id="show_del_msg"></h1>
+		<ul class="deleted">
+
+		</ul>
+	</div>
+
+	<div class="shopping_order_title">
+		韩都官网为您推荐
+		<span class="fr">
+         <a href="javascript:void(0)" class="current t1">最近浏览过的商品</a>
+         <a href="javascript:void(0)" class="t2">最近收藏的</a>
+    </span>
+
+	</div>
+	<div id="slides">
+		<div class="slides_container" style="display: block;">
+
+			<div class="slides_control">
+				<div class="slide" style="">
+
+					<div class="item">
+						<a href="goods-1051867.html" title="" target="_blank">
+							<img src="img/1476043815683026172.jpg" alt="" title="">
+						</a>
+						<p>
+							<a href="" title="" target="_blank">娜娜日记甜美女装2016冬装冬季外套女加厚学生红色棉服棉衣NP5488</a>
+						</p>
+						<p><span class="price">648.00</span></p>
+					</div>
+
+					<div class="item">
+						<a href="" title="" target="_blank">
+							<img src="img/1477565789851415034.jpg" alt="" title="">
+						</a>
+						<p>
+							<a href="" title="" target="_blank">韩都衣舍2016冬季新款韩版宽松毛呢外套女OU6246堯</a>
+						</p>
+						<p><span class="price">858.00</span></p>
+					</div>
+
+					<div class="item">
+						<a href="" title="" target="_blank">
+							<img src="img/1052258_thumb_G_1478240285388.jpg" alt="" title="">
+						</a>
+						<p>
+							<a href="" title="" target="_blank">韩都衣舍2016韩版女装冬季新款毛线衣宽松高领套头毛衣NH6301.</a>
+						</p>
+						<p><span class="price">338.00</span></p>
+					</div>
+
+					<div class="item">
+						<a href="" title="" target="_blank">
+							<img src="img/1052720_thumb_G_1479449355906.jpg" alt="" title="">
+						</a>
+						<p>
+							<a href="" title="" target="_blank">米妮哈鲁童装2016冬装新款女童中大童韩版儿童上衣棉服宝宝棉衣YO4477畵</a>
+						</p>
+						<p><span class="price">578.00</span></p>
+					</div>
+
+					<div class="item">
+						<a href="" title="" target="_blank">
+							<img src="img/1053119_thumb_G_1480576047685.jpg" alt="" title="">
+						</a>
+						<p>
+							<a href="" title="" target="_blank">韩都衣舍2016韩版女装冬装新款纯色显瘦口袋毛呢外套OI5602棽</a>
+						</p>
+						<p><span class="price">898.00</span></p>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="h" style="display:none  ">
+
+		<div class="slide">
+
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--------------------register over购物车中间内容结束-------------------->	
+
+
+<script>
+	$(function(){
+		$('#footer00').load("load-fuyong.html");
+	})
+</script>
+
+<!--------------------footer start页面尾部开始-------------------->
+<div id="footer00"></div>	
+	
+	
+<!--------------------------------------侧面悬浮开始-------------------------------------->
+<div class="float_box">
+	<div class="float_app"></div>
+	<a href="" class="a1" onclick="_czc.push(['_trackEvent', '悬浮', '购物车']);"></a>
+	<a href="" class="a2" onclick="_czc.push(['_trackEvent', '悬浮', '在线客服']);"></a>
+	<a href="" class="a3" onclick="_czc.push(['_trackEvent', '悬浮', '在线反馈']);"></a>
+	<a href="" class="a4" target="_blank"></a>
+	<a href="" class="a5 backTop" onclick="_czc.push(['_trackEvent', '悬浮', '返回顶部']);"></a>
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	</body>
 </html>

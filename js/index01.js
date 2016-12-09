@@ -22,7 +22,11 @@ $(function() {
  */
 
 $(function() {
-	
+	/*
+	 S1 控制轮播对象（小圆点）
+	 S2 轮播对象
+	 OP 设定轮播 时间 速度 状态等
+	 * */
 	jQuery.extend({
 		st: function(s1, s2, op) {
 				var sl = {}; //暴漏给外面的对象
@@ -180,11 +184,87 @@ $(function() {
 	});
 })
 
-/************************************轮播图 over*****************************************************/
+/*************************轮播图 over*****************************************/
 
-/************************************导航左侧栏 start*****************************************************/
+/***********换一批 一堆icon轮播****************/
+$(function(){
+	var index_01 = 0;
+	var llength = $(".firstP").length;
+	var imge = $(".mainBox1 .firstP");
+		imge.hide();
+	imge.eq(0).show();
+$(".mainBox1_img").click(function(){
+//点击箭头的时候自动轮播暂时停用
+	clearInterval(timer_01);
+	   index_01++;
+		if ( index_01< llength) {
+			imge.hide();
+			imge.eq(index_01).show();
+		
+		}else{
+			index_01 = 0;
+			imge.hide();
+			imge.eq(index_01).show();
+		
+		};
+	
+	})
+	$(".t1a").click(function(){
+//点击箭头的时候自动轮播暂时停用
+	clearInterval(timer_01);
+	   index_01++;
+		if ( index_01< llength) {
+			imge.hide();
+			imge.eq(index_01).show();
+		
+		}else{
+			index_01 = 0;
+			imge.hide();
+			imge.eq(index_01).show();
+		
+		};
+	
+	})
+//自动轮播方法	
+function autoRun(){
+	if(index_01<llength-1){
+		index_01 =index_01+1;
+		}else{
+		index_01 = 0;	
+		}
+		imge.hide();
+		imge.eq(index_01).show();
+	}
+var  timer_01 = setInterval(autoRun,3000);
+$(".firstP a").hover(function(){
+		clearInterval(timer_01);
+		},function(){
+		 timer_01 = setInterval(autoRun,3000);
+			})
+	})
 
-/************************************导航左侧栏 over*****************************************************/
+/*******************************中部点击动态 start*************************************/
+//鼠标滑过切换
+		
+$(function(){
+	$('.ffll_item').show();
+	
+	$(document).ready(function() {
+	$(".con .tabs").hover(function() {
+		$(".con .tabs").eq($(this).index()).addClass("display","block").siblings().removeClass("display","block");
+		$(".flower_item").hide().eq($(this).index()).show();		
+		//另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on'); 
+		$(".con .tabs").mouseleave(function(){
+			$(".con .tabs").removeClass("on");
+		})
+	});
+});
+})
+
+
+
+/************************页面最底部动态 一行文字*************************************************/
+
 $(function(){
 	
   $.fn.imgscroll = function(o){
@@ -248,12 +328,13 @@ $(function(){
     
  });
 })
-/************************************header over*****************************************************/
+/*******************header over***************************************/
 
-/************************************footer start*****************************************************/
+/**********************footer start***************************************/
 
 /*底部侧面悬浮 回到顶部*/
 $(function() {
+	$(".float_box").hide();
 	$(window).scroll(function() {
 		var t = document.documentElement.scrollTop || document.body.scrollTop;
 		if(t > 450) {
